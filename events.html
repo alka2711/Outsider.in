@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Slideshow</title>
+    <link rel="stylesheet" href="eventsstyle.css"> 
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="indexafterlogin.html">
+                <img src="images/logo.png" alt="Outsider.in Logo">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="indexafterlogin.html"><button>Home</button></a></li>
+                <li><a href="events.html"><button>Browse Events</button></a></li>
+                <li><a href="create-event.html"><button>Create Event</button></a></li>
+                <li><a href="admin.html"><button>Admin Dashboard</button></a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <section class="event-search">
+        <h2>Find Events</h2>
+        <form id="event-search-form">
+            <div class="filters">
+                <label for="event-date">Event Date:</label>
+                <input type="date" id="event-date" name="event-date">
+
+                <label for="event-category">Event Category:</label>
+                <select id="event-category" name="event-category">
+                    <option value="">All</option>
+                    <option value="Music">Music</option>
+                    <option value="Sports">Sports</option>
+                    <option value="Comedy">Comedy</option>
+                    <option value="Theatre">Theatre</option>
+                </select>
+            </div>
+            <button type="submit">Search</button>
+        </form>
+    </section>
+
+    <section class="events-list">
+        <div id="events-container"></div>
+        
+    </section>
+
+    <footer>
+        <img src="images/logo.png" alt="Outsider.in Logo" style="height: 50px;">
+        <p>Outsider.in is a platform that helps you discover and buy the best in events, travel, and food in your city. We strive to curate experiences that are worth your time and money, possibly something you have never tried before.</p>
+        
+        <ul class="footerlinks">
+            <p>Find us on:</p>
+            <a href="https://www.facebook.com/Insider.in.official" target="_blank">
+                <img src="images/fblogo.png" alt="fblogo" style="height: 30px;">
+            </a>
+            <a href="https://www.instagram.com/insider.in/" target="_blank">
+                <img src="images/instalogo.png" alt="instalogo" style="height: 30px;">
+            </a>
+            <a href="https://x.com/insider_in_" target="_blank">
+                <img src="images/Xlogo.png" alt="Xlogo" style="height: 30px;">
+            </a>
+        </ul>
+    </footer>
+    <script src="eventsscript.js"></script>
+</body>
+</html>

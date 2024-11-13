@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Outsider.in</title>
+    <link rel="stylesheet" href="loginstyle.css"> 
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.png" alt="Outsider.in Logo">
+            </a>
+        </div>
+        <nav>
+            <ul>
+
+                <li><a href="index.html"><button>Home</button></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="login-container">
+            <h2>Login</h2>
+            <form id="loginForm" method="post">
+                <div class="form-group">
+                    <label for="login-email">Email:</label>
+                    <input type="email" id="login-email" name="login-email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Password:</label>
+                    <input type="password" id="login-password" name="login-password" placeholder="Enter your password" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Login</button>
+                </div>
+                <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <img src="images/logo.png" alt="Outsider.in Logo" style="height: 50px;">
+        <p>Outsider.in is a platform that helps you discover and buy the best in events, travel, and food in your city. We strive to curate experiences that are worth your time and money, possibly something you have never tried before.</p>
+        
+        <ul class="footerlinks">
+            <p>Find us on:</p>
+            <a href="https://www.facebook.com/Insider.in.official" target="_blank">
+                <img src="images/fblogo.png" alt="fblogo" style="height: 30px;">
+            </a>
+            <a href="https://www.instagram.com/insider.in/" target="_blank">
+                <img src="images/instalogo.png" alt="instalogo" style="height: 30px;">
+            </a>
+            <a href="https://www.x.com" target="_blank">
+                <img src="images/Xlogo.png" alt="Xlogo" style="height: 30px;">
+            </a>
+        </ul>
+    </footer>
+    <script src="loginscript.js"></script>
+</body>
+</html>

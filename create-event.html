@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Event</title>
+    <link rel="stylesheet" href="createeventstyle.css"> 
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="indexafterlogin.html">
+                <img src="images/logo.png" alt="Outsider.in Logo">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="indexafterlogin.html"><button>Home</button></a></li>
+                <li><a href="events.html"><button>Browse Events</button></a></li>
+                <li><a href="create-event.html"><button>Create Event</button></a></li>
+                <li><a href="admin.html"><button>Admin Dashboard</button></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="create-event-form">
+            <h2>Create Your Event</h2>
+            <form id="eventForm">
+                <div class="form-group">
+                    <label for="event-name">Event Name:</label>
+                    <input type="text" id="event-name" name="event-name" placeholder="Enter Event Name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="event-description">Event Description:</label>
+                    <textarea id="event-description" name="event-description" rows="4" placeholder="Describe your event" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="event-date">Event Date:</label>
+                    <input type="date" id="event-date" name="event-date" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="event-location">Event Location:</label>
+                    <input type="text" id="event-location" name="event-location" placeholder="Enter Location" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="event-category">Event Category:</label>
+                    <select id="event-category" name="event-category" required>
+                        <option value="Music">Music</option>
+                        <option value="Sports">Sports</option>
+                        <option value="Comedy">Comedy</option>
+                        <option value="Theatre">Theatre</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="event-price">Price:</label>
+                    <input type="number" id="event-price" name="event-price" placeholder="Enter Price" required min="0" step="0.01">
+                </div>
+
+                <div class="form-group">
+                    <label for="max-seats">Maximum Seats:</label>
+                    <input type="number" id="max-seats" name="max-seats" placeholder="Enter Maximum Seats" required min="1">
+                </div>
+
+                <div class="form-group">
+                    <label for="event-poster">Event Poster:</label>
+                    <input type="file" id="event-poster" name="event-poster" accept="image/*" required>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit">Create Event</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <img src="images/logo.png" alt="Outsider.in Logo" style="height: 50px;">
+        <p>Outsider.in is a platform that helps you discover and buy the best in events, travel, and food in your city. We strive to curate experiences that are worth your time and money, possibly something you have never tried before.</p>
+        
+        <ul class="footerlinks">
+            <p>Find us on:</p>
+            <a href="https://www.facebook.com/Insider.in.official" target="_blank">
+                <img src="images/fblogo.png" alt="fblogo" style="height: 30px;">
+            </a>
+            <a href="https://www.instagram.com/insider.in/" target="_blank">
+                <img src="images/instalogo.png" alt="instalogo" style="height: 30px;">
+            </a>
+            <a href="https://www.x.com" target="_blank">
+                <img src="images/Xlogo.png" alt="Xlogo" style="height: 30px;">
+            </a>
+        </ul>
+    </footer>
+    <script src="createeventscript.js"></script>
+</body>
+</html>
